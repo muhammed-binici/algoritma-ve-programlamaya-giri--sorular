@@ -1,0 +1,202 @@
+#DERECE İŞLEMLERİ:
+....................................................................................................................................................................
+degrees_celsius = 26.0
+print(9 / 5 * degrees_celsius + 32)
+78.80000000000001
+....................................................................................................................................................................
+degrees_celsius = 15.5
+difference = 100 - degrees_celsius
+print(difference)
+84.5
+.....................................................................................................................................................................
+#ÜNİTE 2 SONU SORULARI#
+                                                       :CEVAPLARI:
+a. 9 - 3                                                   6
+b. 8 * 2.5                                                 20 
+c. 9 / 2                                                   4.5
+d. 9 / -2                                                 -4.5
+e. 9 // -2                                                 -4 
+f. 9 % 2                                                    1
+g. 9.0 % 2                                                 1.0
+h. 9 % 2.0                                                 1.0
+i. 9 % -2                                                   1
+j. -9 % 2                                                   1
+k. 9 / -2.0                                                -4.5
+l. 4 + 3 * 5                                                19
+m. (4 + 3) * 5                                              35
+.....................................................................................................................................................................
+#ÜNİTE 3 SONU SORULARI#
+                                                                      :CEVAPLARI:
+a. min(2, 3, 4)                                                           2
+b. max(2, -3, 4, 7, -5)                                                   7
+c. max(2, -3, min(4, 7), -5)                                              4
+.....................................................................................................................................................................
+                                                                      :CEVAPLARI:
+a. min(max(3, 4), abs(-5))                                                 4
+b. abs(min(4, 6, max(2, 8)))                                               4
+c. round(max(5.572, 3.258), abs(-2))                                      5.57
+.....................................................................................................................................................................
+#ÜNİTE 4 SONU SORULARI#
+
+What value does each of the following expressions evaluate to? Verify your
+answers by typing the expressions into the Python shell.
+                                                                  :CEVAPLARI:
+a. 'Computer' + ' Science'                                       Computer Science
+b. 'Darwin\'s'                                                      Darwin's  
+c. 'H2O' * 3                                                       H2OH2OH2O
+d. 'CO2' * 0                                                          ""
+....................................................................................................................................................................
+Consider this code: 
+                           
+first = 'John'
+last = 'Doe'
+print(last + ', ' + first)
+>>> Doe, John
+....................................................................................................................................................................
+#ÜNİTE 5 SONU SORULARI#
+
+Boolean Operators:
+
+>>> not True
+False
+>>> not False
+True
+>>> True and True
+True
+>>> False and False
+False
+>>> True and False
+False
+>>> False and True
+False
+>>> True or True
+True
+>>> False or False
+False
+>>> True or False
+True
+>>> False or True
+True
+.....................................................................................................................................................................
+
+Relational Operators:
+
+>>> 45 > 34
+True
+>>> 45 > 79
+False
+>>> 45 < 79
+True
+>>> 45 < 34
+False
+>>> 23.1 >= 23
+True
+>>> 23.1 >= 23.1
+True
+>>> 23.1 <= 23.1
+True
+>>> 23.1 <= 23
+False
+>>> 67.3 == 87
+False
+>>> 67.3 == 67
+False
+>>> 67.0 == 67
+True
+>>> 67.0 != 67
+False
+>>> 67.0 != 23
+True
+....................................................................................................................................................................
+
+Combining Comparisons:
+
+>>> x = 2
+>>> y = 5
+>>> z = 7
+>>> x < y and y < z
+True
+>>> x = 5
+>>> y = 10
+>>> z = 20
+>>> (x < y) and (y < z)
+True
+>>> x = 3
+>>> (1 < x) and (x <= 5)
+True
+>>> x = 7
+>>> (1 < x) and (x <= 5)
+False
+
+#KÜMELERDE .add İŞLEMİ
+
+ten = set(range(10))
+lows = {0, 1, 2, 3, 4}
+odds = {1, 3, 5, 7, 9}
+lows.add(8)
+print(lows)
+{0, 1, 2, 3, 4, 8}
+
+#KÜMELERDE .difference İŞLEMİ
+
+lows.difference(odds)
+print(lows)
+{0, 2, 4}
+
+#KÜMELERDE .intersection İŞLEMİ
+
+lows.intersection(odds)
+print(lows)
+{1, 3, 9}
+
+#KÜMELERDE .issubet İŞLEMİ
+
+lows.issubset(ten)
+True
+
+#KÜMELERDE .issuperset İŞLEMİ
+
+lows.issuperset(odds)
+False
+
+#KÜMELERDE .remove İŞLEMİ
+
+lows.remove(0)
+print(lows)
+{1, 2, 3, 4, 9}
+
+#KÜMELERDE .symetric_difference İŞLEMİ
+
+lows.symmetric_difference(odds)
+print(lows)
+{2, 4, 5, 7}
+
+#KÜMELERDE .union İŞLEMİ
+
+lows.union(odds)
+print(lows)
+{1, 2, 3, 4, 5, 7, 9}
+
+#KÜMELERDE .clear İŞLEMİ
+
+lows.clear()
+print(lows)
+set()
+
+
+lows = set([0, 1, 2, 3, 4])
+odds = set([1, 3, 5, 7, 9])
+lows - odds 
+lows.difference(odds)
+{0, 2, 4}
+lows & odds
+lows.intersection(odds)
+{1, 3}
+lows <= odds # Equivalent to lows.issubset(odds)
+False
+lows >= odds # Equivalent to lows.issuperset(odds)
+False
+lows | odds # Equivalent to lows.union(odds)
+{0, 1, 2, 3, 4, 5, 7, 9}
+lows ^ odds # Equivalent to lows.symmetric_difference(odds)
+{0, 2, 4, 5, 7, 9
